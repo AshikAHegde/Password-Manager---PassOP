@@ -183,8 +183,8 @@ const Manager = () => {
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className='flex items-center justify-center gap-2'>
-                                                    {item.password}
+                                                <div className='flex items-center justify-center gap-2 '>
+                                                   {"•".repeat(item.password.length)}
                                                     <FaCopy className='cursor-pointer w-5' onClick={() => {
                                                         copyText(item.password);
                                                     }} />
